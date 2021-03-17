@@ -1,0 +1,92 @@
+\* Assignment_Problem *\
+Minimize
+OBJ: 5 serve_(1,_1) + 8 serve_(1,_10) + 4 serve_(1,_11) + serve_(1,_12)
+ + 8 serve_(1,_13) + 3 serve_(1,_14) + 6 serve_(1,_15) + 8 serve_(1,_16)
+ + 5 serve_(1,_17) + 3 serve_(1,_18) + 6 serve_(1,_19) + 9 serve_(1,_2)
+ + 11 serve_(1,_20) + 3 serve_(1,_3) + 3 serve_(1,_4) + 6 serve_(1,_5)
+ + 5 serve_(1,_6) + 2 serve_(1,_7) + 2 serve_(1,_8) + 6 serve_(1,_9)
+ + 11 serve_(2,_1) + 4 serve_(2,_10) + 8 serve_(2,_11) + 5 serve_(2,_12)
+ + 2 serve_(2,_13) + 7 serve_(2,_14) + 2 serve_(2,_15) + 2 serve_(2,_16)
+ + 9 serve_(2,_17) + 7 serve_(2,_18) + 4 serve_(2,_19) + 5 serve_(2,_2)
+ + 5 serve_(2,_20) + 9 serve_(2,_3) + 7 serve_(2,_4) + 4 serve_(2,_5)
+ + 11 serve_(2,_6) + 8 serve_(2,_7) + 4 serve_(2,_8) + 2 serve_(2,_9)
+Subject To
+route_1: serve_(1,_1) + serve_(2,_1) = 1
+route_10: serve_(1,_10) + serve_(2,_10) = 1
+route_11: serve_(1,_11) + serve_(2,_11) = 1
+route_12: serve_(1,_12) + serve_(2,_12) = 1
+route_13: serve_(1,_13) + serve_(2,_13) = 1
+route_14: serve_(1,_14) + serve_(2,_14) = 1
+route_15: serve_(1,_15) + serve_(2,_15) = 1
+route_16: serve_(1,_16) + serve_(2,_16) = 1
+route_17: serve_(1,_17) + serve_(2,_17) = 1
+route_18: serve_(1,_18) + serve_(2,_18) = 1
+route_19: serve_(1,_19) + serve_(2,_19) = 1
+route_2: serve_(1,_2) + serve_(2,_2) = 1
+route_20: serve_(1,_20) + serve_(2,_20) = 1
+route_3: serve_(1,_3) + serve_(2,_3) = 1
+route_4: serve_(1,_4) + serve_(2,_4) = 1
+route_5: serve_(1,_5) + serve_(2,_5) = 1
+route_6: serve_(1,_6) + serve_(2,_6) = 1
+route_7: serve_(1,_7) + serve_(2,_7) = 1
+route_8: serve_(1,_8) + serve_(2,_8) = 1
+route_9: serve_(1,_9) + serve_(2,_9) = 1
+_dummy: __dummy = 0
+w1_p1: __dummy <= 650
+w1_p2: 36 serve_(1,_1) + 72 serve_(1,_10) + 72 serve_(1,_11)
+ + 78 serve_(1,_12) + 84 serve_(1,_13) + 108 serve_(1,_14) + 90 serve_(1,_15)
+ + 120 serve_(1,_16) + 78 serve_(1,_17) + 42 serve_(1,_18) + 42 serve_(1,_19)
+ + 48 serve_(1,_2) + 60 serve_(1,_20) + 60 serve_(1,_3) + 60 serve_(1,_4)
+ + 42 serve_(1,_5) + 60 serve_(1,_6) + 78 serve_(1,_7) + 90 serve_(1,_8)
+ + 84 serve_(1,_9) <= 650
+w2_p1: __dummy <= 650
+w2_p2: 36 serve_(2,_1) + 72 serve_(2,_10) + 72 serve_(2,_11)
+ + 78 serve_(2,_12) + 84 serve_(2,_13) + 108 serve_(2,_14) + 90 serve_(2,_15)
+ + 120 serve_(2,_16) + 78 serve_(2,_17) + 42 serve_(2,_18) + 42 serve_(2,_19)
+ + 48 serve_(2,_2) + 60 serve_(2,_20) + 60 serve_(2,_3) + 60 serve_(2,_4)
+ + 42 serve_(2,_5) + 60 serve_(2,_6) + 78 serve_(2,_7) + 90 serve_(2,_8)
+ + 84 serve_(2,_9) <= 650
+Bounds
+__dummy = 0
+Binaries
+serve_(1,_1)
+serve_(1,_10)
+serve_(1,_11)
+serve_(1,_12)
+serve_(1,_13)
+serve_(1,_14)
+serve_(1,_15)
+serve_(1,_16)
+serve_(1,_17)
+serve_(1,_18)
+serve_(1,_19)
+serve_(1,_2)
+serve_(1,_20)
+serve_(1,_3)
+serve_(1,_4)
+serve_(1,_5)
+serve_(1,_6)
+serve_(1,_7)
+serve_(1,_8)
+serve_(1,_9)
+serve_(2,_1)
+serve_(2,_10)
+serve_(2,_11)
+serve_(2,_12)
+serve_(2,_13)
+serve_(2,_14)
+serve_(2,_15)
+serve_(2,_16)
+serve_(2,_17)
+serve_(2,_18)
+serve_(2,_19)
+serve_(2,_2)
+serve_(2,_20)
+serve_(2,_3)
+serve_(2,_4)
+serve_(2,_5)
+serve_(2,_6)
+serve_(2,_7)
+serve_(2,_8)
+serve_(2,_9)
+End
